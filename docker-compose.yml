@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  pivpn:
+    image: pivpn_keys
+    ports:
+      - 443:443/udp
+    volumes:
+      - /home/pi/ovpns:/home/pivpn/ovpns
+    privileged: true
+    entrypoint:
+      - /usr/sbin/openvpn
+      - --config
+      - /etc/openvpn/server.conf
+    restart: always
