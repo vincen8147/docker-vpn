@@ -120,7 +120,7 @@ the local filesystem.
 total 24
 drwxr-xr-x 2 root root 4096 Sep 22 20:36 .
 drwxr-xr-x 4 pi   pi   4096 Sep 22 14:01 ..
--rw-r--r-- 1  999 root 5034 Sep 22 20:36 myfirstclient.ovpn
+-rw-r--r-- 1 pi   pi   5034 Sep 22 20:36 myfirstclient.ovpn
 ```
 Now you can distribute the `myfirstclient.ovpn` to your VPN clients and enjoy
 some secure communications.
