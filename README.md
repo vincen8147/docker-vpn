@@ -29,7 +29,7 @@ you have cloned this project to `/opt`.
 First you need to run the
 [pivpn-docker](https://github.com/ljishen/pivpn-docker)
 container to get all VPN goodies created.  This will take a while to run as it
-generates your keys; like 20 minutes.
+generates your keys; like 20 minutes<sup>[2](#f2)</sup>.
 
 ```
 # docker run -ti --rm --privileged ljishen/pivpn
@@ -45,10 +45,8 @@ have your keys saved.
 ```
 
 The setup script will:
-1. On the docker image, setup network forwarding between the tunnel network and the docker eth0
-network.  This is needed if we want network access beyond the VPN server, including the internet.
-1. [Export](https://docs.docker.com/engine/reference/commandline/export/) the filesystem of the container    
-1. Stop the setup container.
+1. [Export](https://docs.docker.com/engine/reference/commandline/export/) the filesystem of the container.    
+1. Stop the ljishen/pivpn container.
 1. [Import](https://docs.docker.com/engine/reference/commandline/import/)
 the file as a new image to use as our VPN service.
 
@@ -138,7 +136,7 @@ systemctl enable docker-compose-app
 ```
 
 ## Footnotes
-<a name="f1">1</a>: [How to install Docker on the pi.](
+1. <a name="f1">&nbsp;</a> [How to install Docker on the pi.](
   https://medium.freecodecamp.org/the-easy-way-to-set-up-docker-on-a-raspberry-pi-7d24ced073ef)
-## Thoughts...
-Linux is free, only if you don't value your time.
+1. <a name="f2">&nbsp;</a>
+"Linux is only free if your time has no value". Jamie Zawinski

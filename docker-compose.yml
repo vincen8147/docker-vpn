@@ -13,3 +13,4 @@ services:
       - --config
       - /etc/openvpn/server.conf
     restart: always
+    network_mode: host
