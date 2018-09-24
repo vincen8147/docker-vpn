@@ -136,7 +136,6 @@ systemctl enable docker-compose-app
 ```
 
 ## Footnotes
-1. <a name="f1">&nbsp;</a> [How to install Docker on the pi.](
-  https://medium.freecodecamp.org/the-easy-way-to-set-up-docker-on-a-raspberry-pi-7d24ced073ef)
+1. <a name="f1">&nbsp;</a> [Setup Docker and Docker Compose using these instructions.](https://www.bargelt.com/setting-up-a-headless-raspberry-pi-with-ssh-docker-docker-compose-git/)
 1. <a name="f2">&nbsp;</a>
 "Linux is only free if your time has no value". Jamie Zawinski
